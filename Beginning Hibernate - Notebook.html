@@ -1,0 +1,1853 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+Beginning Hibernate
+</div>
+<div class="authors">
+Joseph B. Ottinger, Jeff Linwood; Dave Minter
+</div>
+<div class="citation">
+Citation (APA): Joseph B. Ottinger, J. L., & Minter, D. (2019). <i>Beginning Hibernate</i> [Kindle Android version]. Retrieved from Amazon.com
+</div>
+<hr />
+
+            <div class="sectionHeading">
+1. An Introduction to Hibernate 5
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 341
+</div>
+<div class="noteText">
+It provides two kinds of programmatic interfaces: a “native Hibernate” interface and the Java EE-standard Java Persistence API.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 352
+</div>
+<div class="noteText">
+usually their sole purpose is containing a program state. These are known typically as “plain old Java objects,” or POJOs.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 364
+</div>
+<div class="noteText">
+1-1. The role of Hibernate in a Java application
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 377
+</div>
+<div class="noteText">
+The sole condescension to Hibernate here is the provision of a default constructor. Hibernate demands that all POJOs to be stored should provide a default constructor;3
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 458
+</div>
+<div class="noteText">
+Hibernate also takes a configuration-by-exception approach for annotations: if we are satisfied with the default values that Hibernate provides for us, we do not need to explicitly provide them as annotations. For instance, Hibernate uses the name of the POJO class as the default value of the database table to which the object is mapped. In our example, if we are satisfied with using a database table named Message, we do not need to define it in the source code, since the object being mapped is called Message.
+</div>
+<div class="sectionHeading">
+2. Integrating and Configuring Hibernate
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 573
+</div>
+<div class="noteText">
+Hibernate uses standard Java Database Connectivity (JDBC) database drivers to access the relational database. Hibernate does not replace JDBC as a database connectivity layer; Hibernate sits on a level above JDBC.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 587
+</div>
+<div class="noteText">
+embedded database means that you don’t have to have an external process running, nor do you have to configure a special database or user account.3
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 764
+</div>
+<div class="noteText">
+Creating these connections is expensive— probably the most expensive single operation Hibernate will execute in a typical-use case.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 767
+</div>
+<div class="noteText">
+Hibernate's built-in connection pooling isn't designed for production use.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 768
+</div>
+<div class="noteText">
+In production, you would use an external connection pool
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 787
+</div>
+<div class="noteText">
+If you're using Hibernate in a Java EE context– in a web application, for example– then you'll want to configure Hibernate to use JNDI. JNDI connection pools are managed by the container (and thus controlled by the deployer), which is generally the “right way” to manage resources in a distributed environment.
+</div>
+<div class="sectionHeading">
+3. Building a Simple Application
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1299
+</div>
+<div class="noteText">
+we run the test (with mvn package in the top-level directory, or via your IDE,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1410
+</div>
+<div class="noteText">
+So
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1476
+</div>
+<div class="noteText">
+ Query<Object[]>
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1481
+</div>
+<div class="noteText">
+ List<Object[]>
+</div>
+<div class="sectionHeading">
+4. The Persistence Life Cycle
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1560
+</div>
+<div class="noteText">
+Part of Hibernate’s popularity comes from its ability to work with a normal object model.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1568
+</div>
+<div class="noteText">
+Hibernate, it can be in any one of four different states: transient, persistent, detached, or removed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1573
+</div>
+<div class="noteText">
+To persist the changes to a transient object, you would have to ask the session to save the transient object to the database, at which point Hibernate assigns the object an identifier and marks the object as being in persistent state.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1579
+</div>
+<div class="noteText">
+Detached objects have a representation in the database, but changes to the object will not be reflected in the database, and vice versa.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1581
+</div>
+<div class="noteText">
+A detached object can be created by closing the session that it was associated with, or by evicting it from the session with a call to the session’s evict() method.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1582
+</div>
+<div class="noteText">
+One reason you might consider doing this would be to read an object out of the database, modify the properties of the object in memory, and then store the results someplace other than your database. This would be an alternative to doing a deep copy of the object.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1586
+</div>
+<div class="noteText">
+In order to persist changes made to a detached object, the application must reattach it to a valid Hibernate session. A detached instance can be associated with a new Hibernate session when your application calls one of the load, refresh, merge, update(), or save() methods on the new session with a reference to the detached object. After the call, the detached object would be a persistent object managed by the new Hibernate session.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1597
+</div>
+<div class="noteText">
+However, it is possible that you will want objects of a particular type to be represented in two different ways in the database. For instance, you could have one Java class for users, but two different tables in the database that store users. This may not be the best database design, but similar problems are common in legacy systems. Other systems that can’t be easily modified may depend on the existing database design, and Hibernate is powerful enough to cover this scenario.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1608
+</div>
+<div class="noteText">
+An identifier, or identity column, maps to the concept of a primary key in relational databases. A primary key is a unique set of one or more columns that can be used to specify a particular collection of data.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1609
+</div>
+<div class="noteText">
+There are two types of identifiers: natural and artificial. A natural identifier is something that the application finds meaningful– a user ID, for example, or a Social Security number2 or equivalent. An artificial identifier is one whose value is arbitrary. Our code so far uses values generated by the database (identity columns) that have no relation whatsoever with the data associated with that identifier. This tends to yield more flexibility with respect to associations and other such interactions, because the artificial identifier can be smaller than a natural identifier in many cases.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1615
+</div>
+<div class="noteText">
+Why would artificial identifiers be better than natural identifiers? Well, there are a few possible reasons. One reason artificial identifiers might be better than natural identifiers is that an artificial identifier might be a smaller type (in memory) than a natural identifier. Consider a user email. In most cases, user email addresses won’t change, and they tend to be unique for a given user; however, the email addresses might be at least ten bytes long (and could be much longer). An integral user ID (a long, or int) might be four or eight bytes long, and no longer. Another reason is that artificial identifiers won’t change with the data’s natural life cycle. An email address, for example, might change over time; someone might abandon an old email address and prefer a new one. Anything that relied on that email address as a natural identifier would have to be changed synchronously to allow updates. Yet another reason is that artificial identifiers are simple. Databases (and Hibernate) allow the use of composite identifiers– identifiers built up from more than one property in an object. However, this means that when you refer to a specific object or row in the database, you have to include all columns in that identifier, whether as an embedded object or as a set of individual columns.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1626
+</div>
+<div class="noteText">
+In Hibernate, an object attribute is marked as an identifier with the @Id annotation,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1631
+</div>
+<div class="noteText">
+@GeneratedValue, which tells Hibernate that it is responsible for assigning and maintaining the identifier.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1633
+</div>
+<div class="noteText">
+There are five different generation possibilities: identity, sequence, table, auto, and none.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1650
+</div>
+<div class="noteText">
+Tip A common mistake when designing entity models is to try to make all associations bidirectional. Associations that are not a natural part of the object model should not be forced into it. Hibernate Query Language often presents a more natural way to access the same information.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1652
+</div>
+<div class="noteText">
+In associations, one (and only one) of the participating classes is referred to as “managing the relationship.” If both ends of the association manage the relationship, then we would encounter a problem when client code called the appropriate set method on both ends of the association.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1656
+</div>
+<div class="noteText">
+Hibernate allows us to do this by marking one end of the association as being managed by the other (marked by the mappedBy attribute of the association annotation).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1658
+</div>
+<div class="noteText">
+Caution mappedBy is purely about how the foreign key relationships between entities are saved. It has nothing to do with saving the entities themselves. Despite this, they are often confused with the entirely orthogonal cascade functionality
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1730
+</div>
+<div class="noteText">
+The reason it occurs is that Hibernate is using the actual current state of the entities. In Listing 4-5, when you set the message in the email, but not the email in the message, Hibernate persists the actual relationships in the object model, instead of trying to infer a relationship, even when that relationship would be expected.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1734
+</div>
+<div class="noteText">
+If we include the mapping (the mappedBy attribute), we get a different result.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1748
+</div>
+<div class="noteText">
+adds the mappedBy attribute. This actually adds a column to the Message’s database representation, representing the email ID.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1754
+</div>
+<div class="noteText">
+ @OneToOne(mappedBy = "email")
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1784
+</div>
+<div class="noteText">
+That mappingBy attribute is the cause.
+</div>
+<div class="noteHeading">
+Note -  Location 1785
+</div>
+<div class="noteText">
+Message2
+</div>
+<div class="noteHeading">
+Note -  Location 1785
+</div>
+<div class="noteText">
+Message2
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1785
+</div>
+<div class="noteText">
+Mapping2
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1786
+</div>
+<div class="noteText">
+When we close the session and reload, the relationship is set only through that column, which means the relationship is set “correctly” even though we didn’t create the relationship properly when we first created the data.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1792
+</div>
+<div class="noteText">
+Only changes to the owner of an association will be honored in the database.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1793
+</div>
+<div class="noteText">
+When you load a detached entity from the database, it will reflect the foreign key relationships persisted into the database.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1796
+</div>
+<div class="noteText">
+Remember that to make an association the owner, you must mark the other end as being mapped by the other.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1797
+</div>
+<div class="noteText">
+Table 4-1. Marking the Owner of an Association
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1814
+</div>
+<div class="noteText">
+In Hibernate, we use one of the save()– or persist(), which is a synonym for save()– methods on the Session interface to store a transient object in the database,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1818
+</div>
+<div class="noteText">
+Hibernate cannot persist arbitrary unmapped objects. If you have mapped multiple entities to a Java class, you can specify which entity you are saving (Hibernate wouldn't know from just the Java class name) with the entityName argument.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1850
+</div>
+<div class="noteText">
+ session.save(obj);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1855
+</div>
+<div class="noteText">
+ session.save(obj);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1856
+</div>
+<div class="noteText">
+ // note that save() creates a new row in the database! // this is wrong behavior. Don't do this!
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1858
+</div>
+<div class="noteText">
+ assertNotEquals(id,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1873
+</div>
+<div class="noteText">
+ session.saveOrUpdate(obj);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1875
+</div>
+<div class="noteText">
+ // saveOrUpdate() will update a row in the database // if one matches.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1879
+</div>
+<div class="noteText">
+The object goes from transient state (when it’s created) to persistent state (when it’s first saved), then back to transient state (when the session is closed).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1880
+</div>
+<div class="noteText">
+We then update the object while it’s in transient state, and move it back to persistent state when we call Session.saveOrUpdate().
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1881
+</div>
+<div class="noteText">
+Ideally, what you would do is load the object from the session in the first place (as we’ve done in most of our other examples where we show updates); this means that the updates take place on a persistent object, and we don’t actually have to call Session.save() or Session.saveOrUpdate() at all.3 Once an object is in a persistent state, Hibernate manages updates to the database itself as you change the fields and properties of the object.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2232
+</div>
+<div class="noteText">
+HQL uses the entity name, not the class name;
+</div>
+<div class="sectionHeading">
+5. An Overview of Mapping
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2325
+</div>
+<div class="noteText">
+Hibernate is not so tolerant; even if your table has been created without a primary key, Hibernate will require you to specify one.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2347
+</div>
+<div class="noteText">
+While Hibernate will not let you omit the primary key, it will permit you to form the primary key from a collection of columns.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2405
+</div>
+<div class="noteText">
+Certain relationships can be marked as being “lazy,” and they will not be loaded from the database until they are actually required.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2406
+</div>
+<div class="noteText">
+The default in Hibernate is that classes (including collections like Set and Map) should be lazily loaded.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2437
+</div>
+<div class="noteText">
+Table 5-4. Deciding the Cardinality of an Entity Relationship
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2495
+</div>
+<div class="noteText">
+It is possible to create a mandatory foreign key relationship from one of the entities to the other, but this should not be applied in both directions because a circular dependency would then be created. It is also possible to omit the foreign key relationships entirely (as shown in Figure 5-5) and rely on Hibernate to manage the key selection and assignment.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2522
+</div>
+<div class="noteText">
+one-to-many
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2522
+</div>
+<div class="noteText">
+can most simply be represented by the use of a foreign key, with no additional constraints. The relationship can also be maintained by the use of a link table. This will maintain a foreign key into each of the associated tables, which will itself form the primary key of the link table.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2559
+</div>
+<div class="noteText">
+A unique constraint must be applied to the “one” side of the relationship (the userId column of the UserEmailLink table in Figure 5-7); otherwise, the link table can represent the set of all possible relationships between User and Email entities, which is a many-to-many set association.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2568
+</div>
+<div class="noteText">
+If instead of using the foreign keys together as a compound primary key, we give the link table its own primary key (usually a surrogate key), the association between the two entities can be transformed into a full many-to-many relationship,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2596
+</div>
+<div class="noteText">
+When the link table has its own independent primary key, as with the association shown in Figure 5-8, thought should be given to the possibility that a new class needs to be created to represent the contents of the link table as an entity in its own right.
+</div>
+<div class="sectionHeading">
+6. Mapping with Annotations
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2768
+</div>
+<div class="noteText">
+The placement of the @Id annotation determines the default access strategy that Hibernate will use for the mapping.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2777
+</div>
+<div class="noteText">
+Property access means that Hibernate will call the mutator instead of actually setting the field directly;
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2793
+</div>
+<div class="noteText">
+If you do not specify a generator type, the default is AUTO.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2802
+</div>
+<div class="noteText">
+Hibernate provides named generators for each of the four strategies in addition to others, such as “hilo,” “uuid,” and “guid.”
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2804
+</div>
+<div class="noteText">
+Hibernate generators provide more flexibility and control.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2824
+</div>
+<div class="noteText">
+Note For optimal portability and optimal performance, you should not specify the use of a table generator, but instead use the @GeneratorValue(strategy=GeneratorType.AUTO) configuration, which allows the persistence provider to select the most appropriate strategy for the database in use.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2855
+</div>
+<div class="noteText">
+Your three strategies for using this primary key class
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2866
+</div>
+<div class="noteText">
+the most natural approach.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2866
+</div>
+<div class="noteText">
+@Embeddable tag can be used for nonprimary key embeddable values anyway
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2867
+</div>
+<div class="noteText">
+It allows you to treat the compound primary key as a single property, and it permits the reuse of the @Embeddable class in other tables.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2886
+</div>
+<div class="noteText">
+@EmbeddedId tag. Here, the primary key class cannot be used in other tables since it is not an @Embeddable entity, but it does allow us to treat the key as a single attribute of the Account class
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2940
+</div>
+<div class="noteText">
+The only advantage to this approach is its ability to “hide” the use of the primary key class from the interface of the enclosing entity.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2975
+</div>
+<div class="noteText">
+Regardless of which of these approaches we take to declare our compound primary key, the table that will be used to represent it will require the same set of columns. Listing 6-10 shows the DDL that will be generated from Listings 6-7, 6-8, and 6-9; the other table names would differ, but the DDL for each table would be the same.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2979
+</div>
+<div class="noteText">
+CPKBook
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2982
+</div>
+<div class="noteText">
+ primary key
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2986
+</div>
+<div class="noteText">
+If the entity name is changed (by providing a different name in the @Entity annotation, such as @Entity(“BookThing”)), the new name will be used for the table name. (Queries would need to use the entity name; from the user’s perspective, the table name would be irrelevant.) The table name can be customized further, and other database-related attributes can be configured via the @Table annotation. This annotation allows you to specify many of the details of the table that will be used to persist the entity in the database. As already pointed out, if you omit the annotation, Hibernate will default to using the class name for the table name, so you need only provide this annotation if you want to override that behavior.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2996
+</div>
+<div class="noteText">
+The @SecondaryTable annotation provides a way to model an entity bean that is persisted across several different database tables. Here, in addition to providing an @Table annotation for the primary database table, your entity can have a @SecondaryTable annotation, or a @SecondaryTables annotation, in turn, containing zero or more @SecondaryTable annotations.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3000
+</div>
+<div class="noteText">
+The join attribute defines the join column for the primary database table. It accepts an array of javax.persistence.PrimaryKeyJoinColumn objects. If you omit the join attribute, then it will be assumed that the tables are joined on identically named primary key columns.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3002
+</div>
+<div class="noteText">
+When an attribute in the entity is drawn from the secondary table, it must be marked with the @Column annotation , with a table attribute identifying the appropriate table.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3013
+</div>
+<div class="noteText">
+Columns in the primary or secondary tables can be marked as having unique values within their tables by adding one or more appropriate @UniqueConstraint annotations to @Table or @SecondaryTable’s uniqueConstraints attribute. You may also set uniqueness at the field level with the unique attribute on the @Column attribute. For example, to mark the name field in the preceding declaration as being unique,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3038
+</div>
+<div class="noteText">
+Therefore, you’d want the books loaded lazily (because they probably have their own references to Authors, and those authors might have more than one book, and so forth and so on, ad infinitum).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3039
+</div>
+<div class="noteText">
+The @Basic attribute is usually omitted, with the @Column attribute being used where the @Basic annotation’s optional attribute might otherwise be used to provide the NOT NULL behavior.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3042
+</div>
+<div class="noteText">
+Some fields, such as calculated values, may be used at runtime only, and they should be discarded from objects as they are persisted into the database. The JPA specification provides the @Transient annotation for these transient fields.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3057
+</div>
+<div class="noteText">
+name permits the name of the column to be explicitly specified— by default, this would be the name of the property.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3062
+</div>
+<div class="noteText">
+nullable permits the column to be marked NOT NULL when the schema is generated.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3064
+</div>
+<div class="noteText">
+unique permits the column to be marked as containing only unique values. This defaults to false, but commonly would be set for a value that might not be a primary key but would still cause problems if duplicated (such as username).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3072
+</div>
+<div class="noteText">
+insertable defaults to true, but if set to false, the annotated field will be omitted from insert statements generated by Hibernate (i.e., it won’t be persisted).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3074
+</div>
+<div class="noteText">
+updatable defaults to true, but if set to false, the annotated field will be omitted from update statements generated by Hibernate (i.e., it won’t be altered once it has been persisted).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3088
+</div>
+<div class="noteText">
+When all the fields of one entity are maintained within the same table as another, the enclosed entity is referred to in Hibernate as a component. The JPA standard refers to such an entity as being embedded.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3093
+</div>
+<div class="noteText">
+An embeddable entity can only use the @Basic, @Column, @Lob, @Temporal, and @Enumerated annotations. It cannot maintain its own primary key with the @Id tag because its primary key is the primary key of the enclosing entity.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3095
+</div>
+<div class="noteText">
+The @Embeddable annotation itself is purely a marker annotation, and it takes no additional attributes,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3104
+</div>
+<div class="noteText">
+@Embedded annotation draws its column information from the embedded type, but permits the overriding of a specific column or columns with the @AttributeOverride and @AttributeOverrides tags
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3108
+</div>
+<div class="noteText">
+@AttributeOverrides({ @AttributeOverride(name="address",column=@Column(name="ADDR")), @AttributeOverride(name="country",column=@Column(name="NATION"))
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3112
+</div>
+<div class="noteText">
+Neither Hibernate nor the JPA standard supports mapping an embedded object across more than one table. In practice, if you want this sort of persistence for your embedded entity, you will usually be better off making it a first-class entity (i.e., not embedded) with its own @Entity marker and @Id annotations, and then mapping it via a conventional one-to-one association, as explained in the next section.11
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3118
+</div>
+<div class="noteText">
+You should give some thought to using the embedded technique described previously before using the @OneToOne annotation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3119
+</div>
+<div class="noteText">
+You can have a bidirectional relationship with a one-to-one association. One side will need to own the relationship and be responsible for updating a join column with a foreign key to the other side. The nonowning side will need to use the mappedBy attribute to indicate the entity that owns the relationship.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3133
+</div>
+<div class="noteText">
+orphanRemoval indicates that if the value being mapped is deleted, this entity will also be deleted.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3135
+</div>
+<div class="noteText">
+mappedBy indicates that a bidirectional one-to-one relationship is owned by the named entity.12 The owning entity contains the primary key of the subordinate entity.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3140
+</div>
+<div class="noteText">
+it is common to want certain persistence operations on one entity to also be applied to the entity that it is linked to.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3148
+</div>
+<div class="noteText">
+We are therefore able to specify the types of operations that should be cascaded through an association to another entity using the cascade annotation,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3167
+</div>
+<div class="noteText">
+An ordered collection can be persisted in Hibernate or JPA 2 using the @OrderColumn annotation to maintain the order of the collection. You can also order the collection at retrieval time by means of the @OrderBy annotation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3172
+</div>
+<div class="noteText">
+ @OrderBy("name ASC")
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3177
+</div>
+<div class="noteText">
+mappedBy attribute is mandatory on a bidirectional association and optional (being implicit) on a unidirectional association.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3199
+</div>
+<div class="noteText">
+optional @JoinColumn attribute to name the foreign key column required by the association something other than the default (publisher)— this is not necessary, but it illustrates the use of the annotation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3201
+</div>
+<div class="noteText">
+When a unidirectional one-to-many association is to be formed, it is possible to express the relationship using a link table. This is achieved by adding the @JoinTable annotation,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3211
+</div>
+<div class="noteText">
+joinColumns is an array of @JoinColumn attributes representing the primary key of the entity at the “one” end of the association. inverseJoinColumns is an array of @JoinColumn attributes representing the primary key of the entity at the “many” end of the association.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3226
+</div>
+<div class="noteText">
+mappedBy is the field that owns the relationship— this is only required if the association is bidirectional. If an entity provides this attribute, then the other end of the association is the owner of the association, and the attribute must name a field or property of that entity.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3255
+</div>
+<div class="noteText">
+Persistent entities that are related by inheritance must be marked up with the @Inheritance annotation. This takes a single strategy attribute,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3342
+</div>
+<div class="noteText">
+The annotation takes no attributes, but the underlying large object type to be used will be inferred from the type of the field or parameter. String- and character-based types will be stored in an appropriate character-based type. All other objects will be stored in a BLOB.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3345
+</div>
+<div class="noteText">
+@Lob
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3349
+</div>
+<div class="noteText">
+A special case of inheritance occurs when the root of the hierarchy is not itself a persistent entity, but various classes derived from it are.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3351
+</div>
+<div class="noteText">
+The class marked with @MappedSuperclass is not an entity, and is not queryable (it cannot be passed to methods that expect an entity in the Session or EntityManager objects). It cannot be the target of an association.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3353
+</div>
+<div class="noteText">
+The mapping information for the columns of the superclass will be stored in the same table as the details of the derived class (in this way, the annotation resembles the use of the @Inheritance tag with the SINGLE_TABLE strategy).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3355
+</div>
+<div class="noteText">
+In other respects, the superclass can be mapped as a normal entity, but the mappings will apply to the derived classes only (since the superclass itself does not have an associated table in the database).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3356
+</div>
+<div class="noteText">
+When a derived class needs to deviate from the superclass’s behavior, the @AttributeOverride annotation can be used (much as with the use of an embeddable entity).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3365
+</div>
+<div class="noteText">
+the mapped superclass approach behaves differently from the conventional @Inheritance approach with a SINGLE_TABLE strategy.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3368
+</div>
+<div class="noteText">
+JPA 2 also provides an annotation that allows the ordering of appropriate collection types (e.g., List) to be maintained in the database; it does so by maintaining an order column to represent that order.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3372
+</div>
+<div class="noteText">
+employeeNumber column will maintain a value, starting at 0 and incrementing as each entry is added to the list.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3377
+</div>
+<div class="noteText">
+@NamedQuery and @NamedQueries allow one or more Hibernate Query Language or Java Persistence Query Language (JPQL) queries to be associated with an entity.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3382
+</div>
+<div class="noteText">
+The query would retrieve Author entities by name, so it is natural to associate it with that entity; however, there is no actual requirement that a named query be associated in this way with the entity that it concerns.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3390
+</div>
+<div class="noteText">
+You do not need to directly associate the query with the entity against which it is declared, but it is normal to do so. If a query has no natural association with any of the entity declarations, it is possible to make the @NamedQuery annotation at the package level.16 There is no natural place to put a package-level annotation, so Java annotations allow for a specific file, called package-info.java, to contain them.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3398
+</div>
+<div class="noteText">
+Hibernate’s session allows named queries to be accessed directly,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3400
+</div>
+<div class="noteText">
+session.getNamedQuery("findBooksByAuthor",
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3404
+</div>
+<div class="noteText">
+If you have multiple @NamedQuery annotations to apply to an entity, they can be provided as an array of values of the @NamedQueries annotation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3406
+</div>
+<div class="noteText">
+Hibernate also allows the database’s native query language (usually a dialect of SQL) to be used in place of HQL or JPQL. You risk losing portability here if you use a database-specific feature, but as long as you choose reasonably generic SQL, you should be okay.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3408
+</div>
+<div class="noteText">
+The @NamedNativeQuery annotation is declared in almost exactly the same manner as the @NamedQuery annotation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3411
+</div>
+<div class="noteText">
+All queries are used in the same way; the only difference is how they’re accessed, whether by Session.getNamedQuery(), Session.createQuery(), or Session.createSQLQuery();
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3413
+</div>
+<div class="noteText">
+results can be retrieved as a List through Query.list(), or a scrollable result set can be accessed via Query.scroll(), Query.iterate() provides an Iterator (surprise!), and if the Query has only one object returned, Query.uniqueResult() can be used.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3415
+</div>
+<div class="noteText">
+@NamedNativeQuery annotations can be grouped with the @NamedNativeQueries annotation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3461
+</div>
+<div class="noteText">
+@Immutable annotation marks an entity as being, well, immutable. This is useful for situations in which your entity represents reference data– things like lists of states, genders, or other rarely mutated data.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3463
+</div>
+<div class="noteText">
+Hibernate can cache this data aggressively, which needs to be taken into consideration; if the reference data changes, you’d want to make sure that the applications using it are notified or restarted somehow.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3467
+</div>
+<div class="noteText">
+@Immutable can be placed on a collection; in this case, changes to the collection (additions, or removals) will cause a HibernateException to be thrown.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3469
+</div>
+<div class="noteText">
+Generated values are referred to as “artificial primary keys,” and are very much recommended18
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3474
+</div>
+<div class="noteText">
+unique tax identifier. This might be annotated with @Column(unique=true, nullable=false, updatable=false), which would create a unique, immutable index,19 but a natural ID also provides a loadable mechanism that we’ve not seen yet in any of our previous code, plus an actual optimization.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3476
+</div>
+<div class="noteText">
+The Session provides the concept of a loader mechanism, known as a “load access.” There are three loaders contained in Hibernate: able to load by ID, natural ID, and simple natural ID. Loading by ID refers to an internal reference for a given instance. For example, if an object with an ID of 1 is already referred to by Hibernate, Hibernate doesn’t need to go to the database to load that object– it can look the object up through its ID, and return that reference. A natural ID is another form of that ID; in the case of a tax identifier, the system could look it up by the actual object ID (which would be an artificial key in most cases) or by the tax ID number itself– and if the tax ID is a “natural ID,” then the library is able to look that object up internally instead of building a query for the database. Just as there are simple identifiers and composite identifiers comprising single fields and multiple fields, respectively– there are two forms of natural ID, similarly being made up of single fields or multiple fields.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3487
+</div>
+<div class="noteText">
+For natural IDs, there are two forms of load mechanisms; one uses the simple natural ID (where the natural ID is one and only one field), and the other uses named attributes as part of a composite natural ID.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3532
+</div>
+<div class="noteText">
+This is because Hibernate will cache the natural IDs in objects that it loads in a session. When we use the natural ID in the load accessor, Hibernate looks in the session cache and finds that natural ID– and knows that this is the reference for which we’re asking. It doesn’t need to go to the database because it already has it in memory.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3534
+</div>
+<div class="noteText">
+This helps make the class more self-documenting, as well as slightly more efficient; it means that if we have a data about a person from the real world, the API is more efficient.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3631
+</div>
+<div class="noteText">
+An association is bidirectional if each entity maintains a property or field representing its end of the same relationship. For example, if our Address class maintained a reference to the Publisher located there, and the Publisher class maintained a reference to its Address, then the association would be bidirectional.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3636
+</div>
+<div class="noteText">
+When a join table is being used, the foreign key relationship is maintained within the join table itself– it is therefore not appropriate to combine the mappedBy attribute of the @OneToMany annotation with the use of a @JoinTable annotation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3665
+</div>
+<div class="noteText">
+In the previous footnote, we said that we usually make sense. This is a good example of when we really don’t; this is horribly contrived and would earn a solid scolding in an actual project. With that said, the code works and is fairly demonstrative of the concept.
+</div>
+<div class="sectionHeading">
+7. JPA Integration and Lifecycle Events
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3685
+</div>
+<div class="noteText">
+the native Hibernate versions of those annotations are available but rarely used in practice.2)
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3735
+</div>
+<div class="noteText">
+JPA uses the concept of “persistence units,” which are named configurations. Every persistence configuration will have a unique name within a given deployment. Because the persistence units are named,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3858
+</div>
+<div class="noteText">
+Probably the most relevant change is in the usage of transactions, and that’s been entirely voluntary.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3875
+</div>
+<div class="noteText">
+You could use the life cycle in a few different ways: you could manually update a timestamp, for example, or perhaps you could write audit data, initialize transient data, or validate data before persisting it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3976
+</div>
+<div class="noteText">
+If an exception occurs in a lifecycle listener before the event—that is, @PrePersist, @PreUpdate, @PreRemove— it will get passed to the caller for handling. The transaction, however, remains valid. With that said, you will invalidate the transaction if an error occurs in the @PostPersist, @PostUpdate, @PostRemove, or @PostLoad code.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3983
+</div>
+<div class="noteText">
+We can, instead, designate an external class as an entity listener, with the same annotations, through the use of the @EntityListeners annotation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3988
+</div>
+<div class="noteText">
+@EntityListeners({UserAccountListener.class})
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4009
+</div>
+<div class="noteText">
+Event listeners factor in conveniently anywhere where you actually need access to the persistence life cycle, especially when considering data validation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4013
+</div>
+<div class="noteText">
+The Bean Validation specification allows your data model to enforce its own constraints, as opposed to the coders having to add their own data value checks throughout the application code. Model-based validation should have obvious value: it means that you are able to trust the state of your model, no matter at what stage you’re accessing data.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4069
+</div>
+<div class="noteText">
+@NotNull, used on the fname attribute. This is an analog to the @Column(nullable=false)annotation we’ve mentioned earlier, but is applied at a different point in the persistence life cycle; if @NotNull is used, the column will still be set the same way (to not allow null values), but the validation occurs before persistence. If we use @Column(nullable=false), the validation occurs in the database, and gives us a database constraint violation rather than a validation failure— which is a very slight semantic difference, but a difference nonetheless.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4077
+</div>
+<div class="noteText">
+One interesting thing about each of these is that they can actually affect the database definition.15 @Min and @Max, for example, add table constraints if the database is able to support them, and @NotNull enforces the constraint both in code and at the database level. @Size will assign a maximum size to a database column, if the maximum size is given; minimum size isn’t something the database can normally enforce.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4112
+</div>
+<div class="noteText">
+One thing you might notice, though, is that we have validations that encompass only single attributes. We can use the entity life cycle to create our own custom validations, but Validator allows us to create our own validation annotations— including single-field validations (as we’ve seen used) and class-level validations.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4148
+</div>
+<div class="noteText">
+@DataProvider(name
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4155
+</div>
+<div class="noteText">
+} @Test(dataProvider = "validCoordinates")
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4168
+</div>
+<div class="noteText">
+@Constraint(validatedBy = {QuadrantIIIValidator.class})
+</div>
+<div class="sectionHeading">
+8. Using the Session
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4262
+</div>
+<div class="noteText">
+SessionFactory objects are expensive objects; needlessly duplicating them will cause problems quickly, and creating them is a relatively time-consuming process. Ideally, you should have a single SessionFactory for each database your application will access.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4264
+</div>
+<div class="noteText">
+SessionFactory objects are threadsafe, so it is not necessary to obtain one for each thread. However, you will create numerous Session objects— at least one for each thread using Hibernate. Sessions in Hibernate are not threadsafe, so sharing Session objects between threads could cause data loss or deadlock. In fact, you will often want to create multiple Session instances even during the lifetime of a specific thread
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4268
+</div>
+<div class="noteText">
+One important difference is that if a Hibernate Session object throws an exception of any sort, you must discard it and obtain a new one. This prevents data in the session’s cache from becoming inconsistent with the database.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4283
+</div>
+<div class="noteText">
+This method is slightly less efficient than the save() method since it may need to perform a SELECT statement to check whether the object already exists,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4287
+</div>
+<div class="noteText">
+Merges the fields of a nonpersistent object into the appropriate persistent object (determined by ID). If no such object exists in the database, then one is created and saved.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4297
+</div>
+<div class="noteText">
+Determines the identifier— the object(s) representing the primary key— for a specific object associated with the session.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4335
+</div>
+<div class="noteText">
+Gets a database lock for an object (or can be used like persist() if LockMode.NONE is given).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4361
+</div>
+<div class="noteText">
+Determines the approach to flushing currently used. The options are to flush after every operation, flush when needed, never flush, or flush only on commit.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4384
+</div>
+<div class="noteText">
+Transactions and locking are intimately related: the locking techniques chosen to enforce a transaction can determine both the performance and the likelihood of success of the transaction. The type of transaction selected dictates, to some extent, the type of locking that it must use.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4386
+</div>
+<div class="noteText">
+You are not obliged to use transactions if they do not suit your needs, but there is rarely a good reason to avoid them. If you decide to avoid them, you will need to invoke the flush() method on the session at appropriate points to ensure that your changes are persisted to the database.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4389
+</div>
+<div class="noteText">
+A transaction is a unit of work guaranteed to behave as if you have exclusive use of the database. Generally speaking, if you wrap your work in a transaction, the behavior of other system users will not affect your data.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4390
+</div>
+<div class="noteText">
+A transaction can be started, committed to write data to the database, or rolled back to remove all changes from the beginning onward (usually as the result of an error).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4398
+</div>
+<div class="noteText">
+In the real world, it’s not actually desirable for all transactions to be fully ACID (see the sidebar entitled “The ACID Tests”) because of the performance problems that this can cause.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4400
+</div>
+<div class="noteText">
+Different database suppliers support and permit you, to a lesser or greater extent, to break the ACID rules, but the degree of control over the isolation rule is actually mandated by the SQL-92 standard. There are important reasons that you might want to break this rule, so both JDBC and Hibernate also make explicit allowances for it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4407
+</div>
+<div class="noteText">
+The effects of the transaction will be completely invisible to all other transactions until it has completed successfully. This guarantees that the transaction will always see the data in a sensible state. For example, an update to a user’s address should only contain a correct address (i.e., it will never have the house name for one location but the ZIP code for another); without this rule, a transaction could easily see when another transaction had updated the first part but had not yet completed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4435
+</div>
+<div class="noteText">
+Hibernate treats the isolation as a global setting: you apply the configuration option hibernate.connection.isolation in the usual manner, setting it to one of the values permitted in Table 8-2.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4439
+</div>
+<div class="noteText">
+To prevent simultaneous access to data, the database itself will acquire a lock on that data. This can be acquired for the momentary operation on the data only, or it can be retained until the end of the transaction. The former is called optimistic locking and the latter is called pessimistic locking .
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4441
+</div>
+<div class="noteText">
+The Read Uncommitted isolation level always acquires optimistic locks, whereas the Serializable isolation level will only acquire pessimistic locks.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4442
+</div>
+<div class="noteText">
+Some databases offer a feature that allows you to append the FOR UPDATE query to a select operation, which requires the database to acquire a pessimistic lock even in the lower isolation levels.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4462
+</div>
+<div class="noteText">
+WRITE, is acquired by Hibernate automatically when it has written to a row within the current transaction.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4474
+</div>
+<div class="noteText">
+Hibernate can detect this kind of cycle and will throw an error (a PessimisticLockException) if it’s found.
+</div>
+<div class="sectionHeading">
+9. Searches and Queries
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4646
+</div>
+<div class="noteText">
+Hibernate’s query facilities do not allow you to alter the database structure.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4646
+</div>
+<div class="noteText">
+HQL is an object-oriented query language, similar to SQL, but instead of operating on tables and columns, HQL works with persistent objects and their properties.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4647
+</div>
+<div class="noteText">
+It is a superset of the JPQL, the Java Persistence Query Language; a JPQL query is a valid HQL query, but not all HQL queries are valid JPQL queries.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4650
+</div>
+<div class="noteText">
+your HQL queries are translated by Hibernate into conventional SQL queries;
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4653
+</div>
+<div class="noteText">
+Although you can use SQL statements directly with Hibernate (which is covered in detail in the “Using Native SQL” section of this chapter), we recommend that you use HQL (or criteria) whenever possible to avoid database portability hassles, as well as to take advantage of Hibernate’s SQL-generation and caching strategies.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4655
+</div>
+<div class="noteText">
+In addition to its technical advantages over traditional SQL, HQL is a more compact query language than SQL because it can make use of the relationship information defined in the Hibernate mappings.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4659
+</div>
+<div class="noteText">
+If you see an area that needs optimization, first try to optimize using HQL, and only later drop into native SQL. Hibernate provides statistics information through a JMX MBean, which you can use for analyzing Hibernate’s performance. Hibernate’s statistics also give you insight into how caching is performing.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4670
+</div>
+<div class="noteText">
+there are some deprecated or more obscure usages (particularly for SELECT statements) that are not covered here.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4672
+</div>
+<div class="noteText">
+In-memory entities, managed or not, will not be updated to reflect changes resulting from issuing UPDATE statements.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4674
+</div>
+<div class="noteText">
+path
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4676
+</div>
+<div class="noteText">
+The fully qualified name of the entity or entities is path.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4678
+</div>
+<div class="noteText">
+VERSIONED means that the update will update timestamps, if any, that are part of the entity being updated.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4685
+</div>
+<div class="noteText">
+In-memory entities will not be updated to reflect changes resulting from DELETE statements. This also means that Hibernate’s cascade rules will not be followed for deletions carried out using HQL.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4686
+</div>
+<div class="noteText">
+However, if you have specified cascading deletes at the database level (either directly or through Hibernate, using the @OnDelete annotation), the database will still remove the child rows. This approach to deletion is commonly referred to as “bulk deletion,” since it is the most efficient way to remove large numbers of entities from the database.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4861
+</div>
+<div class="noteText">
+The from clause is very basic and useful for working directly with objects. However, if you want to work with the object’s properties without loading the full objects into memory, you must use the select clause.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4866
+</div>
+<div class="noteText">
+select product.name
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4867
+</div>
+<div class="noteText">
+query will contain a List of Java String
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4868
+</div>
+<div class="noteText">
+select product.name, product.price
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4869
+</div>
+<div class="noteText">
+This result set contains a List of Object arrays (therefore, List<Object[]>)—each array represents one set of properties (in this case, a name and price pair).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4880
+</div>
+<div class="noteText">
+Concatenation operator: ||
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4881
+</div>
+<div class="noteText">
+Cases: Case when <logical expression> then <unary expression> else _<unary expression> end
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4882
+</div>
+<div class="noteText">
+Collection expressions: some, exists, all, any
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4886
+</div>
+<div class="noteText">
+JDBC query parameter: ?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4887
+</div>
+<div class="noteText">
+Date and time SQL-92 functional operators: current_time(), current_date(), current_timestamp()
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4890
+</div>
+<div class="noteText">
+This makes writing queries that accept input from the user easy— and you do not have to defend against SQL injection attacks.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4910
+</div>
+<div class="noteText">
+When the value to be provided will be known only at run time, you can use some of HQL’s object-oriented features to provide objects as values for named parameters. The Query interface has a setEntity() method that takes the name of a parameter and an object.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4914
+</div>
+<div class="noteText">
+Supplier supplier
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4915
+</div>
+<div class="noteText">
+product.supplier=:supplier";
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4916
+</div>
+<div class="noteText">
+query.setEntity("supplier",supplier);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4923
+</div>
+<div class="noteText">
+There are two methods on the Query interface for paging: setFirstResult() and setMaxResults(), just as with the Criteria interface. The setFirstResult() method takes an integer that represents the first row in your result set, starting with row 0. You can tell Hibernate to only retrieve a fixed number of objects with the setMaxResults() method. Your HQL is unchanged— you need only to modify the Java code that executes the query.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4950
+</div>
+<div class="noteText">
+HQL’s Query interface provides a uniqueResult() method for obtaining just one object from a HQL query.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4951
+</div>
+<div class="noteText">
+you may also use the uniqueResult() method with other result sets if you limit the results to just the first result. You could use the setMaxResults() method
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4953
+</div>
+<div class="noteText">
+The uniqueResult() method on the Query object returns a single object, or null if there are zero results. If there is more than one result, then the uniqueResult() method throws a NonUniqueResultException.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4971
+</div>
+<div class="noteText">
+Hibernate supports five different types of joins: inner join, cross join, left outer join, right outer join, and full outer join.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4972
+</div>
+<div class="noteText">
+If you use cross join, just specify both classes in the from clause (from Product p, Supplier s). For the other joins, use a join clause after the from clause.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4976
+</div>
+<div class="noteText">
+inner join p.supplier as s
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4984
+</div>
+<div class="noteText">
+If you were using lazy loading with Hibernate, the objects in the collection would not be initialized until you accessed them. If you use fetch on a join in your query, you can ask Hibernate to retrieve the objects in the collection at the time the query executes.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4987
+</div>
+<div class="noteText">
+inner join fetch
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4989
+</div>
+<div class="noteText">
+If you need to get the Product objects, you can access them through the associated Supplier object. You cannot use the properties of the Product objects in expressions contained in the where clause.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4990
+</div>
+<div class="noteText">
+Use of the fetch keyword overrides any settings you have in the mapping file for object initialization.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5000
+</div>
+<div class="noteText">
+product.supplier.name)
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5013
+</div>
+<div class="noteText">
+executeUpdate() for executing HQL UPDATE or DELETE statements.10
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5014
+</div>
+<div class="noteText">
+executeUpdate() method returns an int that contains the number of rows affected by the update or delete,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5017
+</div>
+<div class="noteText">
+Do not include an alias with the update;
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5029
+</div>
+<div class="noteText">
+Be careful when you use bulk delete with objects that are in relationships. Hibernate will not know that you removed the underlying data in the database, and you can get foreign key integrity errors. To get around this, you could set the not-found attribute to ignore on your one-to-many and many-to-one mappings, which will make IDs that are not in the database resolve to null references.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5031
+</div>
+<div class="noteText">
+The default value for the not-found attribute is exception. Setting the not-found attribute to ignore also has the side effect of causing your associations to load eagerly and fetch all related records instead of using lazy loading. This can cause serious performance problems.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5044
+</div>
+<div class="noteText">
+One reason to use native SQL is that your database supports some special features through its dialect of SQL that are not supported in HQL. Another reason is that you may want to call stored procedures from your Hibernate application.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5046
+</div>
+<div class="noteText">
+Rather than just providing an interface to the underlying JDBC connection, like other Java ORM tools, Hibernate provides a way to define the entity (or join) that the query uses. This makes integration with the rest of your ORM-oriented application easy.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5055
+</div>
+<div class="noteText">
+interface already discussed. Your application will create a native SQL query from the session with the createSQLQuery() method on the Session
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5057
+</div>
+<div class="noteText">
+After you pass a string containing the SQL query to the createSQLQuery() method, you should associate the SQL result with an existing Hibernate entity, a join, or a scalar result. The NativeQuery interface has addEntity(), addJoin(), and addScalar() methods. For the entities and joins, you can specify a lock mode,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5064
+</div>
+<div class="noteText">
+query.addScalar("avgPrice",Hibernate.DOUBLE);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5077
+</div>
+<div class="noteText">
+HQL is a powerful object-oriented query language that provides the power of SQL while taking advantage of Hibernate’s object-relational mapping and caching.
+</div>
+<div class="sectionHeading">
+10. Advanced Queries Using Criteria
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5127
+</div>
+<div class="noteText">
+A criteria query uses a model of the information you’re interested in finding.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5129
+</div>
+<div class="noteText">
+This lets you build nested, structured query expressions in Java, providing a compile-time syntax checking that is not possible with a query language like HQL or SQL.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5130
+</div>
+<div class="noteText">
+The Criteria API also includes query by example (QBE) functionality. This lets you supply example objects that contain the properties you would like to retrieve instead of having to step-by-step spell out the components of the query.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5132
+</div>
+<div class="noteText">
+Hibernate used to support two access paths for the Criteria API: a native criteria API and the criteria API exposed by JPA. In Hibernate 5, the native criteria API has been deprecated,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5147
+</div>
+<div class="noteText">
+We’re going to switch to JPA, so our database configuration needs to be META-INF/persistence.xml instead of our typical hibernate.cfg.xml.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5215
+</div>
+<div class="noteText">
+Adding restrictions is most easily done with a “metamodel,” a way of referring to the attributes in an entity. Normally, a metamodel is generated as part of the build process for a project, so we need to modify our pom.xml.3
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5217
+</div>
+<div class="noteText">
+Luckily, the metamodel generator is an annotation processor, so adding a dependency to the build is all we need to do:
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5232
+</div>
+<div class="noteText">
+We are using a parameter in our query for a few reasons. One is that we might actually want to reuse this criteria query at some point… but the main one is that this helps prevent SQL injection attacks, because there’s no guarantee that the JPA implementation will sanitize the query before it is issued to the database. With the parameter, your data will be sanitized by the JDBC driver, and there’s not a potential attack vector.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5242
+</div>
+<div class="noteText">
+ root.get(Product_.description),
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5445
+</div>
+<div class="noteText">
+Since the Criteria API uses the JPA Query mechanism , setFirstResult() and setMaxResults() are both available.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5452
+</div>
+<div class="noteText">
+ query.setFirstResult(2); query.setMaxResults(2);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5461
+</div>
+<div class="noteText">
+if you want to obtain a single Object reference instead of a List, the getSingleResult() method on the Query returns an object or null. If there is more than one result, the getSingleResult() method throws a NonUniqueResultException.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5558
+</div>
+<div class="noteText">
+Note that this can’t be an inner class– because inner class’s construction rules are different, and if it’s an inner class, the Criteria API will not be able to find the constructor.
+</div>
+<div class="sectionHeading">
+11. Filtering the Results of Searches
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5645
+</div>
+<div class="noteText">
+Hibernate offers a centralized management system for them.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5645
+</div>
+<div class="noteText">
+Unlike database views, Hibernate filters can be enabled or disabled during a Hibernate session. In addition, Hibernate filters are parameterized, which is particularly useful when you are building applications on top of Hibernate that use security roles or personalization.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5647
+</div>
+<div class="noteText">
+Filters are particularly useful when you have many similar queries with generalizable selection clauses.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5658
+</div>
+<div class="noteText">
+Filters allow us to define sets of restrictions. Instead of custom queries or sets of similar queries, we can create a filter and apply it when we query the database, such that our actual query doesn’t change, even though the data set does.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5660
+</div>
+<div class="noteText">
+The advantage to using Hibernate filters is that you can programmatically turn filters on or off in your application code, and your filters are defined in consistent locations for easy maintainability. The major disadvantage of filters is that you cannot create new filters at runtime. Instead, any filters your application requires need to be specified in the proper Hibernate annotations or mapping documents. Although this may sound somewhat limiting, the fact that filters can be parameterized makes them pretty flexible.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5665
+</div>
+<div class="noteText">
+You would not need to define the possible values of the status column in the Hibernate annotations or mapping documents— the application can specify those parameters at runtime.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5666
+</div>
+<div class="noteText">
+Although it is certainly possible to write applications with Hibernate that do not use filters, we find them to be an excellent solution to certain types of problems— notably security and personalization.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5677
+</div>
+<div class="noteText">
+The @FilterDef annotation defines the filter and belongs to either the class or the package.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5680
+</div>
+<div class="noteText">
+The condition parameter is a HQL WHERE clause.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5687
+</div>
+<div class="noteText">
+Defining filters on each class is simple, but if you use filters in multiple classes, you will have a lot of duplication. To define any annotation at a package level, you will need to create a Java source file named package-info.java in the package.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5710
+</div>
+<div class="noteText">
+Each session can have a different set of filters with different parameter values. By default, sessions do not have any active filters— you must explicitly enable filters programmatically for each session.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5763
+</div>
+<div class="noteText">
+groups are defined as a Set, annotated with @ElementCollection . This will create a table, USER_GROUPS, that will contain a user ID and a single column,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5832
+</div>
+<div class="noteText">
+ session.enableFilter("byStatus").setParameter("status", Boolean.TRUE);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5858
+</div>
+<div class="noteText">
+ session.enableFilter("byGroup").setParameter("group",
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5859
+</div>
+<div class="noteText">
+ session.enableFilter("byStatus").setParameter("status",
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5866
+</div>
+<div class="noteText">
+A set of filters can cut back on the complexity of the HQL queries used in the rest of your application, at the expense of some runtime flexibility.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5867
+</div>
+<div class="noteText">
+Instead of using views (which must be created at the database level), your applications can take advantage of dynamic filters that can be activated as and when they are required.
+</div>
+<div class="sectionHeading">
+12. Leaving the Relational Database Behind: NoSQL
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5897
+</div>
+<div class="noteText">
+This can yield massive scalability or flexibility. Scalability in this context can refer to speed or size;
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5900
+</div>
+<div class="noteText">
+Flexible data structures mean that you can represent your data as a tree, or a set of trees, just as correctly as you can represent your data as a map, a set of values associated with a single key.3
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 5932
+</div>
+<div class="noteText">
+Most of the exceptions center on queries, because NoSQL databases typically index and query differently from how SQL does.
+</div>
+<div class="sectionHeading">
+13. Hibernate Envers
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 6400
+</div>
+<div class="noteText">
+Hibernate will track changes made to that entity, and you can access the entity as it’s existed through time.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 6434
+</div>
+<div class="noteText">
+@Audited - to every column for which we desire a history.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 6539
+</div>
+<div class="noteText">
+AuditReader is scoped to a Session, so the process is to start a Session and then create an AuditReader using that Session.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 6540
+</div>
+<div class="noteText">
+Once we have an AuditReader , we have access to a lot of different views of our audited entities: we can find what revisions exist for a given entity, we can retrieve those revisions, and we can see whether an entity is audited or not.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 6549
+</div>
+<div class="noteText">
+ AuditReader reader = AuditReaderFactory.get(session);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 6550
+</div>
+<div class="noteText">
+reader.getRevisions(User.class, userId[0]);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 6567
+</div>
+<div class="noteText">
+If we were to comment out @Audited on the groups reference, for example, then the entity would set groups to null. Only audit data is loaded by AuditReader.
+</div>
+
+        </div>
+    </body>
+</html>
