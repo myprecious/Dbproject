@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+The Definitive Guide to Spring Batch
+</div>
+<div class="authors">
+Michael T. Minella
+</div>
+<div class="citation">
+Citation (APA): Minella, M. T. (2019). <i>The Definitive Guide to Spring Batch</i> [Kindle Android version]. Retrieved from Amazon.com
+</div>
+<hr />
+
+            <div class="sectionHeading">
+1. Batch and Spring
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 339
+</div>
+<div class="noteText">
+why do we need batch processing at all?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 340
+</div>
+<div class="noteText">
+You don’t always have all the required information immediately. Batch processing allows you to collect information required for a given process before starting the required processing.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 484
+</div>
+<div class="noteText">
+The most common use case for Spring Batch is probably ETL processing or extract, transform, load.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 487
+</div>
+<div class="noteText">
+Another use case is data migration.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 491
+</div>
+<div class="noteText">
+A third common use case for Spring Batch is any process that requires parallel processing.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 519
+</div>
+<div class="noteText">
+Spring Batch include data validation, formatting of output, the ability to implement complex business rules in a reusable way, and the ability to handle large data sets.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 534
+</div>
+<div class="noteText">
+Note A common misconception is that Spring Batch is or has a scheduler. It doesn’t. There is no way within the framework to schedule a job to run at a given time or based on a given event. There are a number of ways to launch a job, from a simple cron script to Quartz or even an enterprise scheduler like Control-M, but none within the framework itself.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 539
+</div>
+<div class="noteText">
+A job is a process that executes from start to finish without interruption or interaction. A job can consist of a number of steps.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 580
+</div>
+<div class="noteText">
+Spring Cloud Task is a project under the Spring Cloud umbrella that provides facilities for the execution of finite tasks in a cloud environment.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 588
+</div>
+<div class="noteText">
+Spring Cloud Data Flow project is a tool for orchestrating microservices on a cloud platform (CloudFoundry, Kubernetes, or Local). Developing your batch applications as microservices will allow you to deploy them in a dynamic way using Spring Cloud Data Flow.
+</div>
+<div class="sectionHeading">
+2. Spring Batch 101
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 660
+</div>
+<div class="noteText">
+a batch job is a collection of states and transitions from one to the next. In essence, a Spring Batch job is nothing more than a state machine.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 662
+</div>
+<div class="noteText">
+Using the use case of the nightly processing of a user’s bank account as an example,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 666
+</div>
+<div class="noteText">
+When you look deeper at an individual step, you see a self-contained unit of work that is the main building block of a job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 667
+</div>
+<div class="noteText">
+There are two main types of steps: a tasklet step and a chunk based step .
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 670
+</div>
+<div class="noteText">
+(each call to the execute method gets its own transaction).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 670
+</div>
+<div class="noteText">
+It’s commonly used for things like initialization, running a stored procedure, sending notifications, and so on.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 673
+</div>
+<div class="noteText">
+Note that I stated a step has up to three parts. A step isn’t required to have an ItemProcessor. It is okay to have a step that consists of just an ItemReader and an ItemWriter (common in data-migration jobs, for example).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 695
+</div>
+<div class="noteText">
+One of the advantages of the way Spring has structured a job is that it decouples each step into its own independent processor. Each step is responsible for obtaining its own data, applying the required business logic to it, and then writing the data to the appropriate location.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 712
+</div>
+<div class="noteText">
+JobRepository
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 713
+</div>
+<div class="noteText">
+maintaining the state of a job as well as various processing metrics (start time, end time, status, number of reads/writes, etc.). Typically backed by a relational database,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 722
+</div>
+<div class="noteText">
+As each Step is executed, the JobRepository is updated with the current state.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 731
+</div>
+<div class="noteText">
+A JobInstance is a logical execution of a Spring Batch job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 736
+</div>
+<div class="noteText">
+Figure 2-3. Relationship of JobInstance, JobExecution, and StepExecution
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 738
+</div>
+<div class="noteText">
+A JobExecution is a physical execution of a Spring Batch job. Every time you launch a Job, you’ll get a new JobExecution. You may not get a new JobInstance. The obvious example for this is restarting a failed job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 740
+</div>
+<div class="noteText">
+When a job is run the first time, you get a new JobInstance and a JobExecution. If that execution fails, on the restart, you won’t get a new JobInstance since it’s still the same logical run (executed with the same identifying parameters). However, you will get a new JobExecution to track the second physical run. So a JobInstance can have multiple JobExecutions within it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 743
+</div>
+<div class="noteText">
+StepExecution is the physical execution of a Step. There is no concept of a StepInstance in Spring Batch.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 744
+</div>
+<div class="noteText">
+A JobExecution can (and usually does) have multiple StepExecution instances associated with it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 748
+</div>
+<div class="noteText">
+There are five different ways to parallelize your work: dividing work via multithreaded steps, parallel execution of full steps, asynchronous ItemProcessor/ItemWriter configurations, remote chunking, and partitioning.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 752
+</div>
+<div class="noteText">
+each chunk being wrapped within its own transaction.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 752
+</div>
+<div class="noteText">
+If you have 10,000 records, and the commit count is set at 50 records, your job will process records 1 to 50 and then commit, process 51 to 100 and commit, and so on, until all 10,000 records have been processed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 775
+</div>
+<div class="noteText">
+the input is then sent via a form of durable communication (a message broker like RabbitMQ or ActiveMQ, for example) to a remote worker ItemProcessor
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 779
+</div>
+<div class="noteText">
+This approach is good for scenarios where the cost of I/O is small compared to the actual processing.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 968
+</div>
+<div class="noteText">
+@EnableBatchPocessing annotation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 969
+</div>
+<div class="noteText">
+It provides Spring bean definitions for most of the batch infrastructure so you don’t have to, including:
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 990
+</div>
+<div class="noteText">
+Returning RepeatStatus.FINISHED indicates to Spring Batch that you are done with this Tasklet.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 991
+</div>
+<div class="noteText">
+RepeatStatus.CONTINUABLE. In this case, Spring Batch will call your Tasklet again.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1008
+</div>
+<div class="noteText">
+Spring Boot has a component called the JobLauncherCommandLineRunner . This component is loaded at startup when Spring Batch is found on the classpath and it uses our JobLauncher to run any Job definitions found in the ApplicationContext.
+</div>
+<div class="sectionHeading">
+3. Sample Job
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1342
+</div>
+<div class="noteText">
+Once we can read the data, we’ll validate it using an ItemProcessor so that we can minimize errors in the write stage. From there, we’ll use the appropriate ItemWriter implementation to do the correct update based on the record type.
+</div>
+<div class="sectionHeading">
+4. Understanding Jobs and Steps
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1428
+</div>
+<div class="noteText">
+You can execute a job as many times as you need to with the same configuration. Because of this there is no reason to define the same job multiple times.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1441
+</div>
+<div class="noteText">
+If a file isn’t there, it handles the error gracefully. It doesn’t wait for a file to be delivered (that’s the responsibility of a scheduler, and so on).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1451
+</div>
+<div class="noteText">
+The execution of a job begins with a job runner. The job runner is intended to execute the job requested by name with the parameters passed. Spring Batch provides two job runners:
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1460
+</div>
+<div class="noteText">
+Spring Boot provides yet another way to launch your jobs via the JobLauncherCommandLineRunner . This CommandLineRunner implementation looks for all beans of type Job defined in your ApplicaitonContext and executes them on startup (unless configured otherwise).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1468
+</div>
+<div class="noteText">
+uses the TaskExecutor interface from Core Spring to execute the requested job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1470
+</div>
+<div class="noteText">
+If an org.springframework.core.task.SyncTaskExecutor is used, the job is executed in the same thread as the JobLauncher. Any other option executes the job in its own thread.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1471
+</div>
+<div class="noteText">
+When a batch job is run, an org.springframework.batch.core.JobInstance is created. A JobInstance represents a logical run of the job and is identified by the job name and the identifying parameters passed to the job for this run.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1480
+</div>
+<div class="noteText">
+Note A JobInstance can only be executed once to a successful completion. Because a JobInstance is identified by the job name and identifying parameters passed in, this means you can only run a job once with the same identifying parameters.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1486
+</div>
+<div class="noteText">
+BATCH_JOB_INSTANCE.JOB_KEY is actually a hash of the name and identifying parameters).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1486
+</div>
+<div class="noteText">
+A JobExecution is an actual attempt to run the job. If a job runs from start to finish the first time, there is only one JobExecution related to a given JobInstance. If a job ends in an error state after the first run, a new JobExecution is created each time an attempt is made to run the JobInstance (by passing in the same identifying parameters to the same job). For each JobExecution that Spring Batch creates for your job, a record in the BATCH_JOB_EXECUTION table is created. As the JobExecution executes, its state is maintained in the BATCH_JOB_EXECUTION_CONTEXT as well. This allows Spring Batch to restart a job at the correct point if an error occurs .
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1505
+</div>
+<div class="noteText">
+spring.batch.initialize-schema=always
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1508
+</div>
+<div class="noteText">
+We’ve also configured the application to automatically create the batch schema if it isn’t there.2
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1570
+</div>
+<div class="noteText">
+So how do you pass parameters to your jobs? Spring Batch allows you not only to pass parameters to your jobs but also to automatically increment them3 or validate them before your job runs.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1578
+</div>
+<div class="noteText">
+name=Michael
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1582
+</div>
+<div class="noteText">
+Note Spring Batch’s JobParameters are different than configuring properties via Spring Boot’s command line capabilities. As such, job parameters are not passed in with a -- prefix. Spring Batch’s JobParameters are different than system properties and should not be passed to the batch application via -D arguments on the command line.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1626
+</div>
+<div class="noteText">
+org.springframework.batch.core.StepContribution, which contains information about the current transaction that has not been committed yet (write count, read count, and so on). The second parameter is an instance of ChunkContext. It provides the state of the job at the point of execution. If you’re in a Tasklet, it contains any information about the chunk you’re processing. Information about that chunk includes information about the step and job. As you might guess, ChunkContext has a reference to org.springframework.batch.core.scope.context.StepContext, which contains your JobParameters.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1649
+</div>
+<div class="noteText">
+ .getJobParameters() .get("name");
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1686
+</div>
+<div class="noteText">
+@StepScope
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1722
+</div>
+<div class="noteText">
+ validator.setRequiredKeys(new
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1723
+</div>
+<div class="noteText">
+ validator.setOptionalKeys(new
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1805
+</div>
+<div class="noteText">
+Up to now, you’ve been running under the limitation that a job can only be run once with a given set of identifying parameters.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1808
+</div>
+<div class="noteText">
+org.springframework.batch.core.JobParametersIncrementer is an interface that Spring Batch provides to allow you to uniquely generate parameters for a given job. You can add a timestamp to each run.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1853
+</div>
+<div class="noteText">
+you may want to have a parameter be a timestamp with each run of the job. This is common in jobs that run once a day. To do so, you need to create your own implementation of JobParametersIncrementer.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1917
+</div>
+<div class="noteText">
+JobExecutionListener. This interface provides two methods, beforeJob(JobExecution jobExecution) and afterJob(JobExecution jobExecution).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1930
+</div>
+<div class="noteText">
+afterJob method is that it’s called regardless of the status the job finishes in.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1950
+</div>
+<div class="noteText">
+ .listener(new JobLoggerListener())
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1968
+</div>
+<div class="noteText">
+Spring Batch provides the @BeforeJob and @AfterJob annotations just for that use.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1982
+</div>
+<div class="noteText">
+Spring Batch needs to wrap the listener for us to inject it into our job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1987
+</div>
+<div class="noteText">
+ .listener(JobListenerFactoryBean.getListener( new JobLoggerListener()))
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 1994
+</div>
+<div class="noteText">
+ExecutionContext Batch processes are stateful by their nature. They need to know what step they’re on. They need to know how many records they have processed within that step. These and other stateful elements are vital to not only the ongoing processing for any batch process but also restarting it if the process failed before. For example, suppose a batch process that processes a million transactions a night goes down after processing 900,000 of those records. Even with periodic commits along the way, how do you know where to pick back up when you restart? The idea of reestablishing that execution state can be daunting, which is why Spring Batch handles it for you.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2001
+</div>
+<div class="noteText">
+state for a job is maintained in the job execution’s ExecutionContext.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2003
+</div>
+<div class="noteText">
+ExecutionContext is essentially the session for your batch job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2005
+</div>
+<div class="noteText">
+ExecutionContext is that you actually have multiple ExecutionContexts over the course of your job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2009
+</div>
+<div class="noteText">
+Figure 4-3. The relationship between ExecutionContexts
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2011
+</div>
+<div class="noteText">
+ExecutionContext provides a “safe” way to store data. The storage is safe because everything that goes into an ExecutionContext is persisted in the job repository.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2014
+</div>
+<div class="noteText">
+ExecutionContext is part of the JobExecution or StepExecution
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2026
+</div>
+<div class="noteText">
+ jobContext.put(“user.name", name);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2134
+</div>
+<div class="noteText">
+job defines the entire process, a step is the building block of a job. It is an independent, sequential batch processor. I call it a batch processor for a reason. A step contains all of the pieces a unit of work requires. It handles its own input. It can have its own processor. It handles its own output. Transactions are self-contained within a step. It’s by design that steps are as disjointed. This allows you as the developer to structure your job as freely as needed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2147
+</div>
+<div class="noteText">
+Tasklet interface that we have used up to this point allows a developer to create a block of code that is executed within the scope of a transaction repeatedly until the Tasklet.execute method returns RepeatStatus.FINISHED
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2150
+</div>
+<div class="noteText">
+A chunk-based step consists of at least two and up to three main components: an ItemReader, an optional ItemProcessor, and an ItemWriter. Using these components, Spring Batch processes records in chunks, or groups of records. Each chunk is executed within its own transaction allowing Spring Batch to restart after the last successful transaction after a failure .
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2152
+</div>
+<div class="noteText">
+Using these three components, the framework performs three loops. The first loop is with the ItemReader. It reads all the records to be processed within this chunk into memory. The second loop is with the optional ItemProcessor. If an ItemProcessor is configured, the items that were read into memory will be looped over, each one being passed through the ItemProcessor. Finally all of the items are passed in a single call to the ItemWriter where they can be written out at once. This single call to the ItemWriter allows for IO optimizations by batching the physical write. Figure 4-4 shows a sequence diagram of how chunk-based processing works .
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2160
+</div>
+<div class="noteText">
+keep in mind the chunk-based processing that Spring Batch is based on.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2170
+</div>
+<div class="noteText">
+The other way to create a tasklet step is to implement the Tasklet interface
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2171
+</div>
+<div class="noteText">
+There, you implement the execute method required in the interface and return a RepeatStatus object to tell Spring Batch what to do after you completed processing.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2189
+</div>
+<div class="noteText">
+There are two options with this: RepeatStatus.CONTINUABLE and RepeatStatus.FINISHED. These two values can be confusing at first glance. If you return RepeatStatus.CONTINUABLE, you aren’t saying that the job can continue. You’re telling Spring Batch to run the Tasklet again. Say, for example, that you wanted to execute a particular Tasklet in a loop until a given condition was met, yet you still wanted to use Spring Batch to keep track of how many times the Tasklet was executed, transactions, and so on. Your Tasklet could return RepeatStatus.CONTINUABLE until the condition was met. If you return RepeatStatus.FINISHED, that means the processing for this Tasklet is complete (regardless of success) and to continue with the next piece of processing .
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2197
+</div>
+<div class="noteText">
+custom implementations of the Tasklet interface are not the only way to use the Tasklet step. Spring Batch provides three other implementations of Tasklet: CallableTaskletAdapter, MethodInvokingTaskletAdapter, and SystemCommandTasklet.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2206
+</div>
+<div class="noteText">
+Obviously you would use this if you wanted to execute the logic of your step in another thread than the thread in which the step is being executed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2207
+</div>
+<div class="noteText">
+configure the CallableTaskletAdapter as a normal Spring Bean, then register it as the Tasklet in your step.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2218
+</div>
+<div class="noteText">
+ .tasklet(tasklet())
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2225
+</div>
+<div class="noteText">
+tasklet() {
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2232
+</div>
+<div class="noteText">
+One thing to note with CallableTaskletAdapter is that although the tasklet is executed in a different thread than the step itself, this doesn’t parallelize your step execution. The execution of this step won’t be considered complete until the Callable object returns a valid RepeatStatus object. Until this step is considered complete, no other steps in the flow in which this step is configured will execute.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2239
+</div>
+<div class="noteText">
+It allows you to execute a preexisting method on another class as a tasklet in your job. Say for example you already have a service that does a piece of logic that you want to run once in your batch job. Instead of writing an implementation of the Tasklet interface that really just wraps that method call, you can use MethodInvokingTaskletAdapter to call the method.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2256
+</div>
+<div class="noteText">
+ methodInvokingTaskletAdapter.setTargetObject(service()); methodInvokingTaskletAdapter.setTargetMethod("serviceMethod");
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2259
+</div>
+<div class="noteText">
+service()
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2305
+</div>
+<div class="noteText">
+org.springframework.batch.core.step.tasklet.SystemCommandTasklet. This Tasklet is used to—you guessed it—execute a system command! The system command specified is executed asynchronously.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2308
+</div>
+<div class="noteText">
+interruptOnCancel attribute in the listing is optional but indicates to Spring Batch whether to kill the thread the system process is associated with if the job exits abnormally
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2322
+</div>
+<div class="noteText">
+ systemCommandTasklet.setCommand("rm -rf /tmp.txt");
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2371
+</div>
+<div class="noteText">
+You’re highly discouraged from configuring a synchronous task executor due to the potential of locking up your job if the system command causes problems.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2376
+</div>
+<div class="noteText">
+chunks are defined by their commit intervals. If the commit interval is set to 50 items, then your job reads in 50 items, processes 50 items, and then writes out 50 items at once.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2387
+</div>
+<div class="noteText">
+ .<String, String>chunk(10)
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2408
+</div>
+<div class="noteText">
+We then identify it as a chunk-based step via the chunk method. The 10 we pass to it is the configuration for the commit interval so in this example, the job will commit after processing 10 records.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2411
+</div>
+<div class="noteText">
+It’s important to note the commit interval. It’s set at 10 in the example. This means no records will be written until 10 records are read and processed. If an error occurs after processing nine items, Spring Batch will roll back the current chunk (transaction) and mark the job as failed. If you were to set the commit interval value to 1, your job would read in a single item, process that item, and then write that item. Essentially, you would be going back to item-based processing.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2416
+</div>
+<div class="noteText">
+you needed to know now that it’s important to set commit interval as high as reasonably possible to get the best performance on the write side
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2452
+</div>
+<div class="noteText">
+Say that you have a job that needs to process chunks that aren’t all the same size (processing all transactions for an account in a single transaction, for example). Spring Batch provides the ability to programmatically define when a chunk is complete via an implementation of the org.springframework.batch.repeat.CompletionPolicy interface . The CompletionPolicy interface allows the implementation of decision logic to decide if a given chunk is complete. Spring Batch comes with a number of implementations of this interface.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2456
+</div>
+<div class="noteText">
+org.springframework.batch.repeat.policy.SimpleCompletionPolicy, which counts the number of items processed and flags a chunk complete when the configured threshold is reached.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2457
+</div>
+<div class="noteText">
+org.springframework.batch.repeat.policy.TimeoutTerminationPolicy. This allows you to configure a timeout on a chunk so that it may exit gracefully after a given amount of time. What does “exit gracefully” mean in this context? It means that the chunk is considered complete and all transaction processing continues normally
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2461
+</div>
+<div class="noteText">
+TimeoutTerminationPolicy is more likely to be used as part of org.springframework.batch.repeat.policy.CompositeCompletionPolicy. This policy lets you configure multiple policies that determine whether a chunk has completed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2462
+</div>
+<div class="noteText">
+When you use CompositeCompletionPolicy, if any of the policies consider a chunk complete, then the chunk is flagged as complete.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2500
+</div>
+<div class="noteText">
+Using the implementations of the CompletionPolicy interface isn’t your only option to determine how large a chunk is. You can also implement it yourself.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2504
+</div>
+<div class="noteText">
+It’s important to note that an implementation of the CompletionPolicy interface is intended to be stateful and should be able to determine if a chunk has been completed by its own internal state . The start method resets this internal state to whatever is required by the implementation at the beginning of the chunk.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2568
+</div>
+<div class="noteText">
+org.springframework.batch.core.StepExecutionListener and org.springframework.batch.core.ChunkListener interfaces , both of which allow the processing of logic at the beginning and end of a step and chunk respectively. Notice that the Step’s listener is named the StepExecutionListener and not just StepListener. There actually is a StepListener interface; however. it’s just a marker interface that all step-related listeners extend.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2577
+</div>
+<div class="noteText">
+An example would be doing some basic integrity checks after importing a file (whether the correct number of records were written to the database, and so on).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2628
+</div>
+<div class="noteText">
+Within a job in Spring Batch , steps are executed in the order you specify using the next method on the StepBuilder. If you want to execute steps in a different order, it’s quite easy: you configure transitions.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2650
+</div>
+<div class="noteText">
+ .on("FAILED").to(failureStep())
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2651
+</div>
+<div class="noteText">
+ .from(firstStep()).on("*").to(successStep())
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2669
+</div>
+<div class="noteText">
+BatchStatus is an attribute of the JobExecution or StepExecution that identifies the current state of the job or step. ExitStatus is the value returned to Spring Batch at the end of a job or step. Spring Batch evaluates the ExitStatus for its transitions.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2673
+</div>
+<div class="noteText">
+Because the values of the ExitStatus are really just Strings, the ability to use wildcards can make things interesting. Spring Batch allows for two wildcards in on criteria : * matches zero or more characters. For example, C* matches C, COMPLETE, and CORRECT. ? matches a single character. In this case, ?AT matches CAT or KAT but not THAT.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2679
+</div>
+<div class="noteText">
+For example, what if you didn’t want to execute a step if you skipped any records in the current step? You wouldn’t know that from the ExitStatus alone .
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2682
+</div>
+<div class="noteText">
+Spring Batch has provided a programmatic way to determine what to do next. You do this by creating an implementation of the org.springframework.batch.core.job.flow.JobExecutionDecider interface.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2747
+</div>
+<div class="noteText">
+The interesting part about a job that is stopped is that the job can be restarted from where it left off, although no error has occurred. This state is very useful in scenarios when human intervention or some other check or handling is required between steps .
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2749
+</div>
+<div class="noteText">
+It’s important to note that these states are identified by Spring Batch evaluating the ExitStatus of the step to determine what BatchStatus to persist in the JobRepository. ExitStatus can be returned from a step, chunk, or job. BatchStatus is maintained in StepExecution or JobExecution and persisted in the JobRepository.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2774
+</div>
+<div class="noteText">
+ .on("FAILED").end()
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2815
+</div>
+<div class="noteText">
+ .on("FAILED").fail()
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2856
+</div>
+<div class="noteText">
+ .on("FAILED").stopAndRestart(successStep())
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2881
+</div>
+<div class="noteText">
+a step can be defined as a bean. This lets you extract the definition of your steps from a given job into reusable components.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2883
+</div>
+<div class="noteText">
+In Spring Batch, there are three options for how to externalize the order of steps. The first is to create a flow, which is an independent sequence of steps. The second is to use the flow step; although the configuration is very similar, the state persistence in the JobRepository is slightly different. The last way is to actually call another job from within your job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2908
+</div>
+<div class="noteText">
+Flow preProcessingFlow()
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2914
+</div>
+<div class="noteText">
+ .start(preProcessingFlow())
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 2991
+</div>
+<div class="noteText">
+What is the difference between passing the Flow to the JobBuilder and the FlowStep? It comes down to what happens in the JobRepository. Using the flow method on the JobBuilder yields the same results as if you configured the steps in your job. Using a FlowStep adds an additional entry. When you use a FlowStep, Spring Batch records the step that includes the flow as a separate step. Why is this a good thing? The main benefit is for monitoring and reporting purposes. Using a FlowStep allows you to see the impact of the flow as a whole instead of having to aggregate the individual steps.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3059
+</div>
+<div class="noteText">
+spring.batch.job.names=conditionalStepLogicJob must be configured in your application.properties to prevent Spring Boot from executing preProcessingJob automatically on startup.
+</div>
+<div class="sectionHeading">
+6. Running a Job
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3644
+</div>
+<div class="noteText">
+You wouldn’t want a job that is expected to take hours processing millions of records to have to start back at the beginning if a failure occurs. Spring Batch provides restart functionality that allows for it to pick up where it left off.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3652
+</div>
+<div class="noteText">
+When using Spring Boot with Spring Batch, a special CommandLineRunner is used, the JobLauncherCommandLineRunner. The JobLauncherCommandLineRunner uses Spring Batch’s JobLauncher to execute your job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3655
+</div>
+<div class="noteText">
+When Spring Boot executes all the CommandLineRunners configured in the ApplicationContext, if you have the spring-boot-starter-batch on your classpath, the JobLauncherCommandLineRunner will run any Job definitions it finds in the context.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3659
+</div>
+<div class="noteText">
+you probably don’t want that job to execute when the application is started up. To set this behavior, Spring Boot exposes the property spring.batch.job.enabled equal to false in your application.yml (this property is set to true by default).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3677
+</div>
+<div class="noteText">
+ Properties properties = new Properties(); properties.put("spring.batch.job.enabled", false); application.setDefaultProperties(properties);
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3685
+</div>
+<div class="noteText">
+Spring Boot supports this use case by allowing you to configure what jobs are run at startup by using the spring.batch.job.names to identify the names of the jobs to be executed on startup. Spring Boot will take this comma-delimited list and execute them in order.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3703
+</div>
+<div class="noteText">
+It handles the determination of whether the run is part of an existing JobInstance or a new one and acts accordingly.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3709
+</div>
+<div class="noteText">
+By default, it uses a synchronous TaskExecutor so the jobs are executed synchronously by the SimpleJobLauncher
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3724
+</div>
+<div class="noteText">
+We’ll use the SimpleJobLauncher when we create our REST API to launch our job. Conveniently, when using the @EnableBatchProcessing annotation , Spring Batch provides a SimpleJobLauncher for you out of the box so we don’t need to do anything to get one.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3779
+</div>
+<div class="noteText">
+By default, the JobLauncher will execute the job synchronously so we can return the ExitStatus to the user. It’s important to note that most batch jobs don’t run this fast due to the amount of processing involved. Because of this, running them asynchronously in this case would be a better fit (in which case, we’d just return the JobExecution’s id).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3800
+</div>
+<div class="noteText">
+When using a JobParametersIncrementer , it is the caller of the JobLauncher’s responsibility to apply those changes to the parameters. Once parameters have made it to the Job, they are immutable.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3817
+</div>
+<div class="noteText">
+ .getNextJobParameters(job)
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3851
+</div>
+<div class="noteText">
+Quartz has three main components: a scheduler, a trigger, and a job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3851
+</div>
+<div class="noteText">
+A scheduler, which is obtained from a SchedulerFactory , serves as a registry of JobDetails (a reference to a Quartz job) and triggers and is responsible for executing a job when its associated trigger fires.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3853
+</div>
+<div class="noteText">
+A job is a unit of work that can be executed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3853
+</div>
+<div class="noteText">
+A trigger defines when a job is to be run. When a trigger fires, telling Quartz to execute a job, a JobDetails object is created to define the individual execution of the job.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3855
+</div>
+<div class="noteText">
+The model of defining a Job and a JobDetails object is very similar to the way Spring Batch defines a Job and a JobInstance.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3859
+</div>
+<div class="noteText">
+Write your own Quartz Job to launch your job using Spring’s QuartzJobBean.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3861
+</div>
+<div class="noteText">
+Configure a JobDetailBean provided by Spring to create a Quartz JobDetail.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3865
+</div>
+<div class="noteText">
+Quartz does have the option to store metadata in a database,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3882
+</div>
+<div class="noteText">
+It is important to note that we are using an incrementer here. That is basically a requirement since we’ll be running a job multiple times without the ability to provide unique job parameters in another way.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3887
+</div>
+<div class="noteText">
+... public class BatchScheduledJob extends QuartzJobBean
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3891
+</div>
+<div class="noteText">
+executeInternal(JobExecutionContext
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3906
+</div>
+<div class="noteText">
+Using that builder, we provide the Job class we created (BatchScheduledJob in our case), we tell Quartz to not delete the job definition if it is not associated with a trigger (since we’ll use Spring to configure the trigger independently), and tell it to build our JobDetail.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3916
+</div>
+<div class="noteText">
+ .storeDurably()
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 3921
+</div>
+<div class="noteText">
+ .forJob(quartzJobDetail())
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4016
+</div>
+<div class="noteText">
+If we don’t read in the same number of records as the footer record specifies, we should not continue.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4018
+</div>
+<div class="noteText">
+Once it gets to the footer record, if the number of expected records match, processing will continue. However, if they do not, our custom ItemReader will also provide an AfterStep method that will set the ExitStatus to STOPPED.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4060
+</div>
+<div class="noteText">
+StepExecutionListener.afterStep(StepExecution stepExecution) . This method will be called once our step is complete giving us the opportunity to return a specific ExitStatus. In our case, this method will look at the number of records read and compare that with the value saved in the footer of the file. If they match, it will return the ExitStatus set by the framework. Otherwise, it will return ExitStatus.STOPPED. This will allow us to stop the Job from continuing if the file is invalid.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4191
+</div>
+<div class="noteText">
+The final Step, the generateAccountSummaryStep, actually reuses the ItemReader from the applyTransactionsStep since we’re reading the same data (just doing something different with it). This is why the accountSummaryReader is step scoped, so we get a new instance for each step.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4223
+</div>
+<div class="noteText">
+ .on("STOPPED").stopAndRestart(importTransactionFileStep())
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4230
+</div>
+<div class="noteText">
+it says if the ExitStatus is STOPPED, stop the job and restart it back at the same step (in essence, start the job over again if it is programmatically stopped).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4232
+</div>
+<div class="noteText">
+The call to end() is required because we were building a flow using the transitions APIs.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4267
+</div>
+<div class="noteText">
+There is a slightly cleaner approach. We replace the afterStep with a beforeStep to get a handle on the StepExecution. Once you have access to that, when we read the footer record, you can call the StepExecution#setTerminateOnly() method . This method sets a flag that tells Spring Batch to end after the step is complete
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4287
+</div>
+<div class="noteText">
+ this.stepExecution.setTerminateOnly();
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4334
+</div>
+<div class="noteText">
+Job Failure It should come as little surprise that the default behavior of Spring Batch is probably the safest: stopping the job and rolling back the current commit. This is one of the driving concepts of chunk-based processing. It allows you to commit the work you’ve successfully completed and pick up where you left off when you restart.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4337
+</div>
+<div class="noteText">
+By default, Spring Batch considers a step and job failed when any exception is thrown.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4376
+</div>
+<div class="noteText">
+There is a big difference between the examples of stopping via StepExecution and stopping the job with an exception. That difference is the state in which the job is left. In the StepExecution example, the job was stopped after a step is complete in the STOPPED ExitStatus . In the exception case, the step didn’t finish. In fact, it was part way through the step when the exception was thrown. Because of this, the step and job are labeled with the ExitStatus FAILED.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4380
+</div>
+<div class="noteText">
+When a step is identified as FAILED, Spring Batch doesn’t start the step over from the beginning. Instead, Spring Batch is smart enough to remember what chunk you were on when the exception was thrown. When you restart the job, Spring Batch picks up at the chunk it left off on.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4387
+</div>
+<div class="noteText">
+it’s up to you to determine what can and can’t be restarted. If you have a batch process that imports a file in the first step, and that job fails in the second step, you probably do not want to reimport the file.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4394
+</div>
+<div class="noteText">
+if you choose to call the preventRestart() method, as shown in Listing 6-28, then when the job fails or is stopped for any reason, you won’t be able to re-execute it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4398
+</div>
+<div class="noteText">
+ .preventRestart()
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 4467
+</div>
+<div class="noteText">
+Note If the job has the BatchStatus of COMPLETE, the JobInstance can’t be rerun regardless of whether you configure all the steps to allowStartIfComplete(true);
+</div>
+
+        </div>
+    </body>
+</html>
